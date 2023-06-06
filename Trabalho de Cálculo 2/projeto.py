@@ -20,3 +20,9 @@ function_T
 
 #(b) Plote um gráfico 3D da superfície z=T(x,y) usando a função plot3d.
 sp.plotting.plot3d(function_T, (x, 0, 100), (y, 0, -100))
+
+#(c) Plote um gráfico com curvas de nível T(x,y) = c, para c pertence { 0, 30, 60, 120, 150, 180}, 
+#usando a função plot_implicit.
+for i in range(0, 210, 30):
+  plot1 = sp.plot_implicit(sp.Eq(function_T, i), (x, -100, 100), (y, -100, 100), adaptive=False)
+  print()
