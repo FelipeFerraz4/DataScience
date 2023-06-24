@@ -1,0 +1,6 @@
+frase = str(input('Digite uma frase: '))
+frase = frase.strip()
+tamanhoFrase = frase.__len__()
+print('O A aparece {} vezes'.format(frase.upper().count('A')))
+print('Primeira vez na posicao {}'.format(frase.upper().find('A')+1))
+print('Ultima vez na posicao {}'.format(frase.upper().rfind('A')+1))

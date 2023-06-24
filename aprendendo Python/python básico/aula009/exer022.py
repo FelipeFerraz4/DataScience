@@ -1,0 +1,7 @@
+nameFull = str(input('What\'s your full name: '))
+nameFull = nameFull.strip()
+print(nameFull.upper())
+print(nameFull.lower())
+print(nameFull.replace(' ', '').__len__())
+nameList = nameFull.split(" ")
+print(nameList[0].__len__())

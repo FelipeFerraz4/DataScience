@@ -1,0 +1,5 @@
+name = str(input('What\'s your name: '))
+nameList = name.split()
+quantidadeDePalavrasNoNome = nameList.__len__()
+print('first name: {}'.format(nameList[0]))
+print('last name: {}'.format(nameList[quantidadeDePalavrasNoNome-1]))
