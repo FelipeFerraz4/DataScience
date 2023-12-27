@@ -5,6 +5,7 @@ def trinaguloExiste(a, b, c):
             return True
     return False
 
+
 valores = input().split()
 
 a = int(valores[0])
