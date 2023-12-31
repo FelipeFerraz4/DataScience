@@ -13,4 +13,3 @@ while True:
       print(f'Atraso maximo: {resposata}')
     except EOFError:
       break
-    
