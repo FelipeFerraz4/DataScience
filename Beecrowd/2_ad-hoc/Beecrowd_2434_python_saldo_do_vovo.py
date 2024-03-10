@@ -10,5 +10,5 @@ for i in range(dias):
     
     if saldo < menorSaldo:
         menorSaldo = saldo
-
+ 
 print(menorSaldo)
