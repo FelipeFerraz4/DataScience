@@ -13,13 +13,13 @@ fps = 60
 screen_width = 800
 screen_height = 600
 
-explosion_fx = pygame.mixer.Sound("7_Space_invaders/assests/audio/explosion.wav")
+explosion_fx = pygame.mixer.Sound("7_Milky_Way_Defense/assests/audio/explosion.wav")
 explosion_fx.set_volume(0.25)
 
-explosion2_fx = pygame.mixer.Sound("7_Space_invaders/assests/audio/explosion2.wav")
+explosion2_fx = pygame.mixer.Sound("7_Milky_Way_Defense/assests/audio/explosion2.wav")
 explosion2_fx.set_volume(0.25)
 
-laser_fx = pygame.mixer.Sound("7_Space_invaders/assests/audio/laser.wav")
+laser_fx = pygame.mixer.Sound("7_Milky_Way_Defense/assests/audio/laser.wav")
 laser_fx.set_volume(0.25)
 
 rows = 5
@@ -39,13 +39,13 @@ WHITE = (255, 255, 255)
 screen = pygame.display.set_mode((screen_width, screen_height), 0)
 pygame.display.set_caption('Milky Way Defense')
 
-fonte1 = pygame.font.Font("7_Space_invaders/assests/fonte/Pixeled.ttf", 20)
-fonte2 = pygame.font.Font("7_Space_invaders/assests/fonte/Pixeled.ttf", 15)
-fonte3 = pygame.font.Font("7_Space_invaders/assests/fonte/Pixeled.ttf", 30)
+fonte1 = pygame.font.Font("7_Milky_Way_Defense/assests/fonte/Pixeled.ttf", 20)
+fonte2 = pygame.font.Font("7_Milky_Way_Defense/assests/fonte/Pixeled.ttf", 15)
+fonte3 = pygame.font.Font("7_Milky_Way_Defense/assests/fonte/Pixeled.ttf", 30)
  
-backGround = pygame.image.load("7_Space_invaders/assests/image/bg.png")
-terra = pygame.image.load("7_Space_invaders/assests/image/terra.png")
-lua = pygame.image.load("7_Space_invaders/assests/image/lua.png")
+backGround = pygame.image.load("7_Milky_Way_Defense/assests/image/bg.png")
+terra = pygame.image.load("7_Milky_Way_Defense/assests/image/terra.png")
+lua = pygame.image.load("7_Milky_Way_Defense/assests/image/lua.png")
 
 def draw_backGround():
     screen.blit(backGround, (0, 0))
@@ -59,7 +59,7 @@ def draw_text(text, font, text_col, x, y):
 class Spaceship(pygame.sprite.Sprite):
     def __init__(self, x, y, health):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("7_Space_invaders/assests/image/player.png")
+        self.image = pygame.image.load("7_Milky_Way_Defense/assests/image/player.png")
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]
         self.last_shot = pygame.time.get_ticks()
@@ -104,7 +104,7 @@ class Spaceship(pygame.sprite.Sprite):
 class Bullets(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("7_Space_invaders/assests/image/bullet.png")
+        self.image = pygame.image.load("7_Milky_Way_Defense/assests/image/bullet.png")
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]
         
@@ -123,7 +123,7 @@ class Bullets(pygame.sprite.Sprite):
 class Aliens(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("7_Space_invaders/assests/image/alien" +
+        self.image = pygame.image.load("7_Milky_Way_Defense/assests/image/alien" +
                                        str(random.randint(1, 4)) + ".png")
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]
@@ -142,7 +142,7 @@ class Aliens(pygame.sprite.Sprite):
 class Alien_Bullets(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("7_Space_invaders/assests/image/alien_bullet.png")
+        self.image = pygame.image.load("7_Milky_Way_Defense/assests/image/alien_bullet.png")
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]
         
@@ -164,7 +164,7 @@ class Explosion(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.images = []
         for numero in range(1, 6):
-            img = pygame.image.load(f"7_Space_invaders/assests/image/exp{numero}.png")
+            img = pygame.image.load(f"7_Milky_Way_Defense/assests/image/exp{numero}.png")
             if size == 1:
                 img = pygame.transform.scale(img, (20, 20))
             if size == 2:
