@@ -1266,11 +1266,20 @@
         "documentation": {}
     },
     {
+        "label": "show_story",
+        "kind": 2,
+        "importPath": "7_Milky_Way_Defense.index",
+        "description": "7_Milky_Way_Defense.index",
+        "peekOfCode": "def show_story():\n    story_text = [\n        \"MILKY WAY DEFENSE\",\n        \"\",\n        \"No ano de 2525...\",\n        \"A Via Láctea está sob ataque.\",\n        \"\",\n        \"Forças inimigas desconhecidas estão avançando rumo à Terra,\",\n        \"destruindo colônias humanas por todo o sistema galáctico.\",\n        \"\",",
+        "detail": "7_Milky_Way_Defense.index",
+        "documentation": {}
+    },
+    {
         "label": "create_aliens",
         "kind": 2,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "def create_aliens():\n    for row in range(rows):\n        for item in range(cols):\n            alien = Aliens(200 + item * 100, 90 + row * 70)\n            alien_group.add(alien)\nspaceship = Spaceship((screen_width//2), screen_height - 40, 3)\nspaceship_group.add(spaceship)\ncreate_aliens()\nrun = True\nwhile run:",
+        "peekOfCode": "def create_aliens():\n    for row in range(rows):\n        for item in range(cols):\n            alien = Aliens(200 + item * 100, 90 + row * 70)\n            alien_group.add(alien)\nspaceship = Spaceship((screen_width//2), screen_height - 40, 3)\nspaceship_group.add(spaceship)\ncreate_aliens()\nrun = True\nshow_story()",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     },
@@ -1513,7 +1522,7 @@
         "kind": 5,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "spaceship_group = pygame.sprite.Group()\nbullet_group = pygame.sprite.Group()\nalien_group = pygame.sprite.Group()\nalien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef create_aliens():\n    for row in range(rows):\n        for item in range(cols):\n            alien = Aliens(200 + item * 100, 90 + row * 70)\n            alien_group.add(alien)",
+        "peekOfCode": "spaceship_group = pygame.sprite.Group()\nbullet_group = pygame.sprite.Group()\nalien_group = pygame.sprite.Group()\nalien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef show_story():\n    story_text = [\n        \"MILKY WAY DEFENSE\",\n        \"\",\n        \"No ano de 2525...\",",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     },
@@ -1522,7 +1531,7 @@
         "kind": 5,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "bullet_group = pygame.sprite.Group()\nalien_group = pygame.sprite.Group()\nalien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef create_aliens():\n    for row in range(rows):\n        for item in range(cols):\n            alien = Aliens(200 + item * 100, 90 + row * 70)\n            alien_group.add(alien)\nspaceship = Spaceship((screen_width//2), screen_height - 40, 3)",
+        "peekOfCode": "bullet_group = pygame.sprite.Group()\nalien_group = pygame.sprite.Group()\nalien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef show_story():\n    story_text = [\n        \"MILKY WAY DEFENSE\",\n        \"\",\n        \"No ano de 2525...\",\n        \"A Via Láctea está sob ataque.\",",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     },
@@ -1531,7 +1540,7 @@
         "kind": 5,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "alien_group = pygame.sprite.Group()\nalien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef create_aliens():\n    for row in range(rows):\n        for item in range(cols):\n            alien = Aliens(200 + item * 100, 90 + row * 70)\n            alien_group.add(alien)\nspaceship = Spaceship((screen_width//2), screen_height - 40, 3)\nspaceship_group.add(spaceship)",
+        "peekOfCode": "alien_group = pygame.sprite.Group()\nalien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef show_story():\n    story_text = [\n        \"MILKY WAY DEFENSE\",\n        \"\",\n        \"No ano de 2525...\",\n        \"A Via Láctea está sob ataque.\",\n        \"\",",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     },
@@ -1540,7 +1549,7 @@
         "kind": 5,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "alien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef create_aliens():\n    for row in range(rows):\n        for item in range(cols):\n            alien = Aliens(200 + item * 100, 90 + row * 70)\n            alien_group.add(alien)\nspaceship = Spaceship((screen_width//2), screen_height - 40, 3)\nspaceship_group.add(spaceship)\ncreate_aliens()",
+        "peekOfCode": "alien_bullet_group = pygame.sprite.Group()\nexplosion_group = pygame.sprite.Group()\ndef show_story():\n    story_text = [\n        \"MILKY WAY DEFENSE\",\n        \"\",\n        \"No ano de 2525...\",\n        \"A Via Láctea está sob ataque.\",\n        \"\",\n        \"Forças inimigas desconhecidas estão avançando rumo à Terra,\",",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     },
@@ -1549,7 +1558,7 @@
         "kind": 5,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "explosion_group = pygame.sprite.Group()\ndef create_aliens():\n    for row in range(rows):\n        for item in range(cols):\n            alien = Aliens(200 + item * 100, 90 + row * 70)\n            alien_group.add(alien)\nspaceship = Spaceship((screen_width//2), screen_height - 40, 3)\nspaceship_group.add(spaceship)\ncreate_aliens()\nrun = True",
+        "peekOfCode": "explosion_group = pygame.sprite.Group()\ndef show_story():\n    story_text = [\n        \"MILKY WAY DEFENSE\",\n        \"\",\n        \"No ano de 2525...\",\n        \"A Via Láctea está sob ataque.\",\n        \"\",\n        \"Forças inimigas desconhecidas estão avançando rumo à Terra,\",\n        \"destruindo colônias humanas por todo o sistema galáctico.\",",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     },
@@ -1558,7 +1567,7 @@
         "kind": 5,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "spaceship = Spaceship((screen_width//2), screen_height - 40, 3)\nspaceship_group.add(spaceship)\ncreate_aliens()\nrun = True\nwhile run:\n    clock.tick(fps)\n    draw_backGround()\n    if countdown == 0:\n        draw_text(f'NAVES INIMIGAS RESTANTES: {score}', fonte1, WHITE, 10, 0)\n        draw_text('FASE 1', fonte1, WHITE, (screen_width//2 + 150), 0)",
+        "peekOfCode": "spaceship = Spaceship((screen_width//2), screen_height - 40, 3)\nspaceship_group.add(spaceship)\ncreate_aliens()\nrun = True\nshow_story()\nwhile run:\n    clock.tick(fps)\n    draw_backGround()\n    if countdown == 0:\n        draw_text(f'NAVES INIMIGAS RESTANTES: {score}', fonte1, WHITE, 10, 0)",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     },
@@ -1567,7 +1576,7 @@
         "kind": 5,
         "importPath": "7_Milky_Way_Defense.index",
         "description": "7_Milky_Way_Defense.index",
-        "peekOfCode": "run = True\nwhile run:\n    clock.tick(fps)\n    draw_backGround()\n    if countdown == 0:\n        draw_text(f'NAVES INIMIGAS RESTANTES: {score}', fonte1, WHITE, 10, 0)\n        draw_text('FASE 1', fonte1, WHITE, (screen_width//2 + 150), 0)\n        if len(alien_group) < quantity_alien:\n            score -= (quantity_alien - len(alien_group))\n            quantity_alien = len(alien_group)",
+        "peekOfCode": "run = True\nshow_story()\nwhile run:\n    clock.tick(fps)\n    draw_backGround()\n    if countdown == 0:\n        draw_text(f'NAVES INIMIGAS RESTANTES: {score}', fonte1, WHITE, 10, 0)\n        draw_text('FASE 1', fonte1, WHITE, (screen_width//2 + 150), 0)\n        if len(alien_group) < quantity_alien:\n            score -= (quantity_alien - len(alien_group))",
         "detail": "7_Milky_Way_Defense.index",
         "documentation": {}
     }
